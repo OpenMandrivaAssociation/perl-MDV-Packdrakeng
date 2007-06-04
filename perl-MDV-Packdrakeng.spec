@@ -1,5 +1,5 @@
 %define dist	MDV-Packdrakeng
-%define version	1.10
+%define version	1.11
 %define release	%mkrel 1
 
 Summary:	Simple Archive Extractor/Builder
@@ -8,8 +8,8 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Development/Perl
-Source0:	%{dist}-%{version}.tar.bz2
-Url:		http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/perl-%{dist}/
+Source0:	%{dist}-%{version}.tar.gz
+Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
 BuildRoot:	%{_tmppath}/%{name}-buildroot/
 BuildArch:	noarch
 BuildRequires:	perl-Compress-Zlib
