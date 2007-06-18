@@ -1,5 +1,5 @@
 %define dist	MDV-Packdrakeng
-%define version	1.11
+%define version	1.12
 %define release	%mkrel 1
 
 Summary:	Simple Archive Extractor/Builder
