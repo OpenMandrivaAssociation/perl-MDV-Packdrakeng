@@ -10,6 +10,7 @@ License:	GPL
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.gz
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
+BuildRoot:	%{_tmppath}/%{name}-buildroot/
 BuildArch:	noarch
 BuildRequires:	perl-Compress-Zlib
 # perl-Compress-Zlib is only "suggested"
