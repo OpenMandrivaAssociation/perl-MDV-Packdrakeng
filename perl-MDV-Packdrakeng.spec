@@ -1,6 +1,6 @@
 %define dist	MDV-Packdrakeng
 %define version	1.13
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Simple Archive Extractor/Builder
 Name:		perl-%{dist}
