@@ -1,20 +1,21 @@
 %define dist	MDV-Packdrakeng
 %define version	1.13
-%define release	%mkrel 4
+%define release	%mkrel 5
 
-Summary:	Simple Archive Extractor/Builder
+# perl-Compress-Zlib is only "suggested"
+%define _requires_exceptions perl(Compress::Zlib)
+
 Name:		perl-%{dist}
 Version:	%{version}
 Release:	%{release}
+Summary:	Simple Archive Extractor/Builder
 License:	GPL
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.gz
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
-BuildRoot:	%{_tmppath}/%{name}-buildroot/
+BuildRequires:	perl(Compress::Zlib)
 BuildArch:	noarch
-BuildRequires:	perl-Compress-Zlib
-# perl-Compress-Zlib is only "suggested"
-%define _requires_exceptions perl(Compress::Zlib)
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 MDV::Packdrakeng is a simple indexed archive builder and extractor using
@@ -31,11 +32,11 @@ standard compression methods.
 %{__make} test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
