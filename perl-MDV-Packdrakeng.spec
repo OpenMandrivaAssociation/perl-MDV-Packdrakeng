@@ -1,6 +1,6 @@
 %define dist	MDV-Packdrakeng
 %define version	1.13
-%define release	%mkrel 9
+%define release	%mkrel 10
 
 # perl-Compress-Zlib is only "suggested"
 %define _requires_exceptions perl(Compress::Zlib)
