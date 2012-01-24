@@ -13,7 +13,6 @@ Source0:	%{dist}-%{version}.tar.xz
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
 BuildRequires:	perl(Compress::Zlib)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 MDV::Packdrakeng is a simple indexed archive builder and extractor using
@@ -30,16 +29,10 @@ standard compression methods.
 %{__make} test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc ChangeLog README
 %{_mandir}/*/*
 %{perl_vendorlib}/MDV/Packdrakeng
 %{perl_vendorlib}/MDV/Packdrakeng.pm
-
