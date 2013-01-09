@@ -3,7 +3,7 @@
 %define release	10
 
 # perl-Compress-Zlib is only "suggested"
-%define _requires_exceptions perl(Compress::Zlib)
+#define _requires_exceptions perl(Compress::Zlib)
 
 Name:		perl-%{dist}
 Version:	%{version}
