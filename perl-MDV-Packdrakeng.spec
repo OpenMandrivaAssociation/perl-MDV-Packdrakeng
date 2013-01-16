@@ -1,11 +1,11 @@
-%define dist	MDV-Packdrakeng
+%define dist MDV-Packdrakeng
 
 # perl-Compress-Zlib is only "suggested"
 %define _requires_exceptions perl(Compress::Zlib)
 
 Name:		perl-%{dist}
 Version:	1.14
-Release:	1
+Release:	2
 Summary:	Simple Archive Extractor/Builder
 License:	GPLv2+
 Group:		Development/Perl
