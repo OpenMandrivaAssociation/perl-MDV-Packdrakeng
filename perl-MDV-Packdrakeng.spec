@@ -5,7 +5,7 @@
 
 Name:		perl-%{dist}
 Version:	1.14
-Release:	2
+Release:	1
 Summary:	Simple Archive Extractor/Builder
 License:	GPLv2+
 Group:		Development/Perl
