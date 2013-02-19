@@ -1,7 +1,7 @@
 %define dist MDV-Packdrakeng
 
 # perl-Compress-Zlib is only "suggested"
-%define _requires_exceptions perl(Compress::Zlib)
+%define __noautoreq 'perl\\(Compress::Zlib\\)'
 
 Name:		perl-%{dist}
 Version:	1.14
