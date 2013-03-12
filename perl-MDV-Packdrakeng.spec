@@ -13,6 +13,7 @@ Source0:	%{dist}-%{version}.tar.xz
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
 BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl-JSON-PP
+BuildRequires:	perl-devel
 BuildArch:	noarch
 Suggests:	perl(Compress::Zlib)
 
