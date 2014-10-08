@@ -6,7 +6,7 @@
 Summary:	Simple Archive Extractor/Builder
 Name:		perl-%{dist}
 Version:	1.14
-Release:	8
+Release:	9
 License:	GPLv2+
 Group:		Development/Perl
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
