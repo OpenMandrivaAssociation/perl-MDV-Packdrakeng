@@ -9,7 +9,7 @@ Version:	1.14
 Release:	13
 License:	GPLv2+
 Group:		Development/Perl
-Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
+Url:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
 Source0:	%{dist}-%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	perl(Compress::Zlib)
