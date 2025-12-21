@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/rpm/MDV-Packdrakeng/
 Source0:	%{dist}-%{version}.tar.xz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl-devel
 Suggests:	perl(Compress::Zlib)
